@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css" rel="stylesheet">
+    <style>
+        /* 1. font-family 속성으로 지정 
+        body {font-family : '궁서체', 돋움, serif;}*/
+        /* 2. web font 지정 -> 용량이 적어야함
+           *.ttf : 용량이 큼. format('truetype')
+           *.eot :  format 안적음.
+           *.woff : format('woff')
+           *.woff2 : format('woff2')
+           무료폰트사이트 
+           - 구글 웹폰트:https://fonts.google.com/
+           - 네이버 웹폰트:https://hangeul.naver.com/font
+           - 눈누:https://noonnu.cc      
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Ms+Madi&display=swap');
+            .gfont {font-family: 'Bebas Neue', cursive;}
+            
+            .nfont {font-family: 'NanumBarunPenBold';}  
+        /* 3. @font-face : 다운로드 한 글꼴
+            웹 폰트 변환 사이트 : https://transfonter.org (항상 사용범위 확인 필요)  */
+        @font-face{ font-family: Gugi-Regular;
+                    src : url('./font/Gugi-Regular.ttf') format('truetype'); }
+            .ffont{font-family: Gugi-Regular, cursive;}
+        /* 4. 웹 안전 글꼴 
+        영어 : https://www.w3schools.com/css/css_font_websafe.asp  
+        한글 - 가변폭: 굴림(Gulim), 돋움(Dotum), 바탕(Batang), 궁서(Gungsuh)
+             - 고정폭: 굴림체(GulimChe), 돋움체(DotumChe), 바탕체(BatangChe), 궁서체(GungsuhChe)*/
+    </style>
+</head>
+<body>
+    <h3 class="gfont"> font 속성 정하기</h3>
+    <p class="nfont">font-family 속성으로 지정</p>
+    <p class="ffont">@font-face : 다운로드 한 글꼴</p>
+</body>
+</html>

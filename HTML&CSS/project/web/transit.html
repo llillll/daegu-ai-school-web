@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전환 프로퍼티, 전환시간 */
+        span{ transition: font-size 3s;}
+        span:hover{ font-size: 500%;}
+
+        div{ width: 100px; height: 100px; background: orange; margin-bottom: 100px;}
+        .box{ transition-property: width, height, background-color;
+              transition-duration: 3s, 1s;}
+        .box:hover{ width: 300px; height: 300px; background-color: brown;}
+        .box2{ transition-property: transform, width, height;
+               transition-duration: 3s;}
+        .box2:hover{ width: 200px; height: 200px; transform: rotate(180deg); background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <p><span>꽝</span>글자에 마우스를 올려보세요. </p>
+
+
+    <div class = "box"></div>
+    <div class = "box2"></div>
+</body>
+</html>

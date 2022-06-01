@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{width: 100%}
+        .left{
+            width: 300px;
+            height: 300px;
+            background-color: antiquewhite;
+            float: left;
+            overflow: hidden;
+            overflow-y: scroll;
+            overflow-x: scroll;
+        }
+        .left2{
+            width: 100px;
+            height: 300px;
+            background-color: blue;
+            float: left;
+        }
+        .right{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            float: right;
+        }
+        .right2{
+            width: 100px;
+            height: 300px;
+            background-color: green;
+            float: right;
+        }
+        .clearfix{
+            clear: both; /* float 사용/해제를 명확히 표시 -> 빠른 코드 파악 */
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            clear: both; /* clear: left | right | both */
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, totam nostrum error ex mollitia corrupti. Ipsam minus modi reiciendis, quasi, facere accusamus atque sunt amet praesentium in veniam unde. Eos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi accusantium repellendus similique distinctio atque, enim recusandae eveniet officia animi assumenda, deserunt minima nesciunt libero iste blanditiis rerum dolorem veritatis.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit neque aliquam earum accusantium quo ipsa, repudiandae alias necessitatibus nesciunt maxime distinctio nostrum laborum, asperiores eveniet rerum ut aut et repellendus!
+    </div>
+    <div class="left2"></div>
+    <div class="right"></div>
+    <div class="right2"></div>
+    <div class="clearfix"></div>
+    <footer></footer>
+</body>
+</html>

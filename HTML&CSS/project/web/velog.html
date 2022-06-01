@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css" rel="stylesheet">
+    <style>
+        h3,li {color : brown;}  /*태그 셀렉터*/
+        div > div > strong {background-color: yellow;}  /*자식 셀렉터*/
+        ul strong { color : dodgerblue; }  /*자손 셀렉터*/
+        div.notice {color : red;}  /*class 셀렉터*/
+        #list{background-color: mistyrose;}  /*id 셀렉터*/
+        #list span { color : forestgreen;}  /*자손 셀렉터*/
+        h3::first-letter { color : black; }
+        li:hover { background: yellowgreen;}
+ 		
+        /* 1. font-family 속성으로 지정
+           2. web font 지정 -> 용량이 적어야함 */        
+        
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Ms+Madi&display=swap');
+            .gfont {font-family: 'Bebas Neue', cursive;}
+            
+            .nfont {font-family: 'NanumBarunPenBold';}  
+       
+        /* 3. @font-face : 다운로드 한 글꼴
+           4. 웹 안전 글꼴 */
+        
+        @font-face{ font-family: Gugi-Regular;
+                    src : url('./font/Gugi-Regular.ttf') format('truetype'); }
+            .ffont{font-family: Gugi-Regular, cursive;}
+    </style>
+</head>
+<body>
+    <h3>Web Programming</h3>
+    <hr>
+    <div>
+        <div>5월 <strong class = "notice">학습내용</strong></div>
+        <ul id = "list">
+            <li><span>HTML</span></li>
+            <li><a href="#">CSS</a></li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li><strong>Javascript</strong></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+        <div class = "notice"><span>월~금: 10시~ 1시</span></div>
+        <ul>
+            <li>test1</li>
+            <li>test1</li>
+            <li>test1</li>
+            <li>test1</li>
+        </ul>
+    
+    <input type = "text" placeholder = "예 또는 아니오">
+    <input type = "button" value = "확인">
+    </div>
+    
+    <h3 class="gfont"> font 속성 정하기</h3>
+    <p class="nfont">font-family 속성으로 지정</p>
+    <p class="ffont">@font-face : 다운로드 한 글꼴</p>
+    
+</body>
+</html>
